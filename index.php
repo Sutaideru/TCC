@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "bootstrap.css" rel = "stylesheet">
     <script src = "bootstrap.js">
-    <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
+    <link rel="icon" type="image/x-icon" href="./calendario.ico">
     <title>Document</title>
 </head>
 <body>
@@ -54,4 +54,5 @@
   </div>
 </form>
 </body>
+
 </html>
