@@ -1,0 +1,37 @@
+Professores
+├───Matricula - INT - PK - NN
+│
+├───Nome - VarChar(255) - NN
+│
+├───Curs - INT - FK - NN
+│   
+└───Capacitacoes - INT - FK - NN
+ 
+Cursos
+├───IDCrso - INT - PK - NN
+│
+├───Nome - VarChar(255) - NN
+│
+├───Turnos - VarChar(255) - NN
+│
+├───Profe - INT - FK - NN
+│
+└───Materia - INT - FK - NN
+
+Competencias
+├───IDComp - INT - PK - NN
+│
+├───Nome - VarChar(255) - NN
+│
+├───CargaHr - INT - NN
+│
+├───Prof - INT - FK - NN
+│
+└───Curso - INT - FK - NN
+
+Login
+│
+├───Email - VarChar(255) - PK - NN
+│
+└───Senha - VarChar(255) - NN
+
