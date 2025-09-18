@@ -5,7 +5,7 @@ Professores
 │
 ├───Curs - INT - FK - NN
 │
-├──Turns - INT - FK - NN
+├──Turns - INT - NN
 │   
 └───Capacitacoes - INT - FK - NN
  
@@ -36,5 +36,6 @@ Login
 ├───Email - VarChar(255) - PK - NN
 │
 └───Senha - VarChar(255) - NN
+
 
 
