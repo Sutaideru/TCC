@@ -1,41 +1,42 @@
-Professores
-├───Matricula - INT - PK - NN
+professores
+├───matricula - INT - PK - NN
 │
-├───Nome - VarChar(255) - NN
+├───nomeprof - VarChar(255) - NN
 │
-├───Curs - INT - FK - NN
+├───curs - INT - FK - NN
 │
-├──Turns - INT - NN
+├──turns - INT - NN
 │   
-└───Capacitacoes - INT - FK - NN
+└───competen - INT - FK - NN
  
-Cursos
-├───IDCrso - INT - PK - NN
+curso
+├───IDcurso - INT - PK - NN
 │
-├───Nome - VarChar(255) - NN
+├───nomecurso - VarChar(255) - NN
 │
-├───Turnos - INT - NN
+├───turnos - INT - NN
 │
-├───Profe - INT - FK - NN
+├───profes - INT - FK - NN
 │
-└───Comps - INT - FK - NN
+└───compet - INT - FK - NN
 
-Competencias
-├───IDComp - INT - PK - NN
+competencias
+├───IDcompetencia - INT - PK - NN
 │
-├───Nome - VarChar(255) - NN
+├───nomecompetencia - VarChar(255) - NN
 │
-├───CargaHr - INT - NN
+├───cargahor - INT - NN
 │
-├───Profes - INT - FK - NN
+├───profess - INT - FK - NN
 │
-└───Curso - INT - FK - NN
+└───cursos - INT - FK - NN
 
 Login
 │
-├───Email - VarChar(255) - PK - NN
+├───usuario - VarChar(100) - PK - NN
 │
-└───Senha - VarChar(255) - NN
+└───senha - VarChar(255) - NN
+
 
 
 
