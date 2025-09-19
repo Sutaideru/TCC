@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Bootstrap/bootstrap.css" rel="stylesheet">
     <script src="Bootstrap/bootstrap.js"></script> 
-    <script src="scripts.js"><script>
+    <script src="scripts.js"></script>
     <style>
       body {
         background-image: url('./images/nome.png');
@@ -41,6 +41,19 @@
     <input type="text" class="form-control" id="exampleInputPassword1">
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
+<div>
+  <a href="home.php">
+    <button>Home</button>
+  </a>
+  <a href="novo_prof.php">
+    <button>Novo Prof</button>
+  </a>
+  <a href="prof_add.php">
+    <button>Prod add</button>
+  </a>
+  <a href="index.php">
+    <button>Index</button>
+  </a>
+</div>
 </body>
 </html>

@@ -6,5 +6,4 @@
     $db = "agendada";
 
     $conection = mysqli_connect($servidor, $user, $password, $db);
-
 ?>

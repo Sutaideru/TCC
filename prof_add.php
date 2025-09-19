@@ -89,11 +89,14 @@
   <a href="home.php">
     <button>Home</button>
   </a>
-  <a href="home.php">
-    <button>Home</button>
+  <a href="novo_prof.php">
+    <button>Novo Prof</button>
   </a>
-  <a href="home.php">
-    <button>Home</button>
+  <a href="prof_add.php">
+    <button>Prod add</button>
+  </a>
+  <a href="index.php">
+    <button>Index</button>
   </a>
 </div>
 </body>

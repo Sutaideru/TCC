@@ -36,16 +36,14 @@
       <label for="exampleInputPassword1" class="form-label">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
-    <div class="mb-3 form-check" style="margin-left: 45%">
+    <div class="mb-3 form-check" style="margin-left: 10%">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
       <button type="submit" class="btn btn-primary" style="width: 20%; margin-left: 35%">Submit</button>
-    <a href="prof_add.php">VaiSubmit</button>
+    <a href="home.php">VaiSubmit</button>
     </a>
   </form>
 </div>
-
-
 </body>
 </html>
