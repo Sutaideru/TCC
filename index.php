@@ -6,6 +6,10 @@
     <link href="Bootstrap/bootstrap.css" rel="stylesheet">
     <script src="Bootstrap/bootstrap.js"></script> 
     <script src="scripts.js"></script>
+    <?php 
+      include "conexao";
+      include "register_db.php";
+    ?>
     <style>
       body {
         background-image: url('./images/nome.png');
