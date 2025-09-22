@@ -10,7 +10,7 @@ professores
 └───competencias_professor - INT - FK - NN
  
 curso
-├───IDcurso - INT - PK - NN
+├───IDcurso - INT - PK - A.I. - NN
 │
 ├───nome_curso - VarChar(255) - NN
 │
@@ -21,7 +21,7 @@ curso
 └───competencias_curso - INT - FK - NN
 
 competencias
-├───IDcompetencia - INT - PK - NN
+├───IDcompetencia - INT - PK - A.I. - NN
 │
 ├───nome_competencia - VarChar(255) - NN
 │
@@ -36,6 +36,7 @@ Login
 ├───usuario - VarChar(100) - PK - NN
 │
 └───senha - VarChar(255) - NN
+
 
 
 
