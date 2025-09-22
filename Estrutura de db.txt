@@ -1,41 +1,42 @@
 professores
 ├───matricula - INT - PK - NN
 │
-├───nomeprof - VarChar(255) - NN
+├───nome_professor - VarChar(255) - NN
 │
-├───curs - INT - FK - NN
+├───cursos_professor - INT - FK - NN
 │
-├──turns - INT - NN
+├──turnos_professor - INT - NN
 │   
-└───competen - INT - FK - NN
+└───competencias_professor - INT - FK - NN
  
 curso
 ├───IDcurso - INT - PK - NN
 │
-├───nomecurso - VarChar(255) - NN
+├───nome_curso - VarChar(255) - NN
 │
-├───turnos - INT - NN
+├───turnos_curso - INT - NN
 │
-├───profes - INT - FK - NN
+├───professores_curso - INT - FK - NN
 │
-└───compet - INT - FK - NN
+└───competencias_curso - INT - FK - NN
 
 competencias
 ├───IDcompetencia - INT - PK - NN
 │
-├───nomecompetencia - VarChar(255) - NN
+├───nome_competencia - VarChar(255) - NN
 │
 ├───cargahor - INT - NN
 │
-├───profess - INT - FK - NN
+├───professores_competencia - INT - FK - NN
 │
-└───cursos - INT - FK - NN
+└───cursos_competencia - INT - FK - NN
 
 Login
 │
 ├───usuario - VarChar(100) - PK - NN
 │
 └───senha - VarChar(255) - NN
+
 
 
 
