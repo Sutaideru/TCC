@@ -25,7 +25,7 @@ competencias
 │
 ├───nome_competencia - VarChar(255) - NN
 │
-├───cargahor - INT - NN
+├───carga_horaria - INT - NN
 │
 ├───professores_competencia - INT - FK - NN
 │
@@ -36,6 +36,7 @@ Login
 ├───usuario - VarChar(100) - PK - NN
 │
 └───senha - VarChar(255) - NN
+
 
 
 
