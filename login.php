@@ -2,7 +2,7 @@
 
 include("conexao.php");
 
-if(issets($_POST['submit']){
+if(issets($_POST['submit'])){
     $usuario = ["usuario"]
     $senha = ["senha"]
 

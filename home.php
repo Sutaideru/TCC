@@ -11,38 +11,21 @@
     <meta>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: blue;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <table>
+<ul class="nav" style = "background-color: #005caa;">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="home.php" style="color:white;">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="novo_prof.php" style="color:white;">Novo Prof</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="prof_add.php" style="color:white;">Prof Add</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.php" style="color:white;">Index</a>
+  </li>
+</ul>
+    <table class="table table-bordered border-primary">
         <tr>
             <th>Dom</th>
             <th>Seg</th>
@@ -53,29 +36,41 @@
             <th>Sab</th>
         </tr>
         <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
         </tr>
         <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
         </tr>
     </table>
-    <div>
-  <a href="home.php">
-    <button>Home</button>
-  </a>
-  <a href="novo_prof.php">
-    <button>Novo Prof</button>
-  </a>
-  <a href="prof_add.php">
-    <button>Prod add</button>
-  </a>
-  <a href="index.php">
-    <button>Index</button>
-  </a>
-</div>
 </body>
 </html>
