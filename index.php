@@ -1,3 +1,6 @@
+<?php
+include ("conexao.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +9,21 @@
     <link href="Bootstrap/bootstrap.css" rel="stylesheet">
     <script src="Bootstrap/bootstrap.js"></script> 
     <script src="scripts.js"></script>
-    <?php 
-      include "conexao";
-      include "register_db.php";
-    ?>
     <style>
       body {
         background-image: url('./images/nome.png');
+        width: fit-content;
+        length: fit-content;
+        
       }
       .caixa-exemplo {
-        width: 30%;
-        height: 100%;
+        margin: 0 auto;
+        width: 200px;
+        height: 60%;
         padding: 20px;
         background-color: white;
-        margin-left: 35%;
-        margin-top: 15%;
+        margin-left: auto;
+        margin-top: auto;
         border-radius: 15px;
         justify-content: center;
       }
@@ -34,15 +37,10 @@
     <div class="mb-3" style="width: 80%; margin-left: 10%">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3" style="width: 80%; margin-left: 10%">
       <label for="exampleInputPassword1" class="form-label">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check" style="margin-left: 10%">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
     </div>
       <button type="submit" class="btn btn-primary" style="width: 20%; margin-left: 35%">Submit</button>
     <a href="home.php">VaiSubmit</button>

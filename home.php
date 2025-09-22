@@ -8,10 +8,7 @@
     <script src="scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
     <title>Agenda</title>
-    <?php 
-      include "conexao";
-      include "register_db.php";
-    ?>
+    <meta>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color: blue;">
@@ -47,7 +44,6 @@
 </nav>
     <table>
         <tr>
-            <th>Período</th>
             <th>Dom</th>
             <th>Seg</th>
             <th>Ter</th>
@@ -57,19 +53,14 @@
             <th>Sab</th>
         </tr>
         <tr>
-            <td>Manhã</td>
-            <td>Tarde</td>
-            <td>Noite</td>
-            <td>Noite</td>
-            <td>Noite</td>
-            <td>Noite</td>
-            <td>Noite</td>
-            <td>Noite</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
         </tr>
     </table>
     <div>
@@ -88,5 +79,3 @@
 </div>
 </body>
 </html>
-
-<!--Cor do senai: #055e7f -->

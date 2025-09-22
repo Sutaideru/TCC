@@ -21,10 +21,6 @@
         justify-content: center;
       }
     </style>
-    <?php 
-      include "conexao";
-      include "register_db.php";
-    ?>
     <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
     <title>Agenda</title>
 <meta>

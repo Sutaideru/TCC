@@ -10,7 +10,7 @@
     //Tabela competências
     $IDcompetencia = $_POST["IDcompetencia"]
     $nomecompetencia = $_POST["nomecompetencia"]
-    $cargahor = $_POST["cargahor"]
+    $cargahor = $_POST["cargaHr"]
     $profess = $_POST["profess"]
     $cursos = $_POST["cursos"]
     // Tabela cursos
