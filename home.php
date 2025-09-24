@@ -1,3 +1,9 @@
+<?php
+  if (!isset($_SESSION)) {
+    session_start();
+  }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +16,9 @@
     <title>Agenda</title>
     <meta>
 </head>
+<?php 
+  echo $SESSION['user'];
+?>
 <body>
 <ul class="nav" style = "background-color: #005caa;">
   <li class="nav-item">

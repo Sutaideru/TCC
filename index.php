@@ -1,8 +1,8 @@
 <?php
-  include ("conexao.php");
+  include "conexao.php";
 
-  if isset($_POST['usuario']) || isset($_POST['senha']) {
-    if strlen($_POST['usuario'] == 0) {
+  if (isset($_POST['usuario']) || isset($_POST['senha'])) {
+    if (strlen($_POST['usuario'] == 0)) {
       echo "Preencha um usuário";
     } elseif (strlen($_POST['senha']) == 0) {
       echo "Preencha uma senha";
@@ -10,7 +10,7 @@
       $usuario = $connection->real_escape_string($_POST['usuario']);
       $senha = $connection->real_escape_string($_POST['senha']);
 
-      $sql_code = "SELECT * FROM login WHERE usuario = '$usuario' AND senha = '$senha'";
+      $sql_code = "SELECT * FROM users WHERE usuario = '$usuario' AND senha = '$senha'";
       $sql_query = $connection->query($sql_code) or die("Falha na execução do código SQL: ". $connection->error);
 
       $quantidade = $sql_query->num_rows;
@@ -24,7 +24,8 @@
         }
 
         $_SESSION['user'] = $usuario['usuario'];
-        $_SESSION['nome'] = $usuario['usuario'];
+
+        header('Location: home.php');
 
       } else {
         echo "Falha ao logar! Usuário ou senha incorretos";
@@ -69,14 +70,14 @@
 <body>
 <div class="caixa-exemplo">
   <img src="./images/senai-logo" style="width: 80px; height: 40px; position: absolute; margin-right: 8%; margin-bottom: 16%">
-  <form action="register_db.php" method="POST">
+  <form method="POST"> <!--action="register_db.php"-->
     <div class="mb-3" style="width: 240px;">
       <label for="exampleInputEmail1" class="form-label">Usuário</label>
-      <input type="text" class="form-control" id="exampleInputUsername1" name="username">
+      <input type="text" class="form-control" id="exampleInputUsername1" name="usuario">
     </div>
     <div class="mb-3" style="width: 240px;">
       <label for="exampleInputPassword1" class="form-label">Senha</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+      <input type="password" class="form-control" id="exampleInputPassword1" name="senha">
     </div>
       <button type="submit" class="btn btn-primary" style="width: 240px">Submit</button>
     <a href="home.php"><br>VaiSubmit</button>
