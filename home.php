@@ -1,8 +1,5 @@
 <?php
-  if (!isset($_SESSION)) {
-    session_start();
-  }
-
+  include"protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +14,7 @@
     <meta>
 </head>
 <?php 
-  echo $SESSION['user'];
+  echo $_SESSION['user'];
 ?>
 <body>
 <ul class="nav" style = "background-color: #005caa;">
@@ -81,5 +78,9 @@
             <td>a</td>
         </tr>
     </table>
+
+    <p>
+      <a href="logout.php">Sair</a>
+    </p>
 </body>
 </html>
