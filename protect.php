@@ -4,7 +4,8 @@ if (!isset($_SESSION)){
     session_start();
 }
 
-if (!isset($_SESSION["usuario"])){
+if (!isset($_SESSION["user"])){
     die("Acesso negado.");
 }
+
 ?>
