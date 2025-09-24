@@ -5,10 +5,10 @@
     $password = "";
     $db = "agendada";
 
-    $conection = mysqli_connect($servidor, $user, $password, $db);
+    $connection = mysqli_connect($servidor, $user, $password, $db);
     echo "";
 
-    if($connection->errror){
+    if($connection->error){
         die("Falha ao conectar ao banco de dados: ". $connection->error);
     }
 ?>
