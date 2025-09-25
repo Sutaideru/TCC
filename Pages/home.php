@@ -70,9 +70,10 @@ include './Methods/navbar.php'
     </table>
 
     <p>
-      <a href="./Pages/logout.php">Sair</a>
+      <a href="./Methods/logout.php">Sair</a>
     </p>
 </body>
 </html>
+
 
 
