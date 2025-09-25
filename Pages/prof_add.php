@@ -1,3 +1,6 @@
+<?php
+  include"./Methods/protect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +30,7 @@
 </head>
 <body>
 <?php
-include 'navbar.php'
+include './Methods/navbar.php'
 ?>
 <form>
   <div class="mb-3">
@@ -54,3 +57,4 @@ include 'navbar.php'
 </form>
 </body>
 </html>
+
