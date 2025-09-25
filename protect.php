@@ -18,7 +18,7 @@ if (!isset($_SESSION['user'])){
     <meta>
 </head>
 <body>
-<div class='alert alert-danger' role='alert'>Acesso negado. 
+<div class='alert alert-danger' role='alert' style='display: flex; top: 20%; position: fixed; border-radius: 15px'>Acesso negado. 
 <a href='index.php'>Voltar para login<a>
 </div>
 </body>
