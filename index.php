@@ -116,7 +116,7 @@ Falha ao logar! Usuário ou senha incorretos
 </head>
 <body>
 <div class="caixa-exemplo">
-  <img src="./images/senai-logo" style="width: 80px; height: 40px; position: absolute; margin-right: 8%; margin-bottom: 16%">
+  <img src="./images/senai-logo" style="width: 107px; height: 27px; position: absolute; margin-right: 8%; margin-bottom: 16%">
   <form method="POST"> <!--action="register_db.php"-->
     <div class="mb-3" style="width: 240px;">
       <label for="exampleInputEmail1" class="form-label">Usuário</label>
@@ -127,8 +127,6 @@ Falha ao logar! Usuário ou senha incorretos
       <input type="password" class="form-control" id="exampleInputPassword1" name="senha">
     </div>
       <button type="submit" class="btn btn-primary" style="width: 240px">Submit</button>
-    <a href="home.php"><br>VaiSubmit</button>
-    </a>
   </form>
 </div>
 </body>
