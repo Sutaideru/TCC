@@ -18,7 +18,7 @@
 ?>
 <body>
 <?php
-include 'navbar.php'
+include './Methods/navbar.php'
 ?>
 </ul>
     <table class="table table-bordered border-primary">
@@ -74,4 +74,5 @@ include 'navbar.php'
     </p>
 </body>
 </html>
+
 
