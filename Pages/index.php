@@ -1,5 +1,5 @@
 <?php
-  include "conexao.php";
+  include "./Methods/conexao.php";
 
   if (isset($_POST['usuario']) || isset($_POST['senha'])) {
     if (strlen($_POST['usuario'] == 0)) {
@@ -131,3 +131,4 @@ Falha ao logar! Usuário ou senha incorretos
 </div>
 </body>
 </html>
+
