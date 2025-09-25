@@ -2,44 +2,36 @@ professores
 ├───matricula - INT - PK - NN
 │
 ├───nome_professor - VarChar(255) - NN
-│
-├───cursos_professor - INT - FK - NN
-│
-├──turnos_professor - INT - NN
 │   
-└───competencias_professor - INT - FK - NN
+└───turnos_professor - ENUM ('M','T','N','MT','MN',TN') - NN
  
-curso
+cursos
 ├───IDcurso - INT - PK - A.I. - NN
 │
 ├───nome_curso - VarChar(255) - NN
 │
-├───turnos_curso - INT - NN
-│
-├───professores_curso - INT - FK - NN
-│
-└───competencias_curso - INT - FK - NN
+└───turnos_curso - ENUM ('M','T','N','MT','MN',TN') - NN
 
 competencias
 ├───IDcompetencia - INT - PK - A.I. - NN
 │
 ├───nome_competencia - VarChar(255) - NN
 │
-├───carga_horaria - INT - NN
-│
-├───professores_competencia - INT - FK - NN
-│
-└───cursos_competencia - INT - FK - NN
+└───carga_horaria - INT - NN
 
-Login
+users
 │
 ├───usuario - VarChar(100) - PK - NN
 │
 └───senha - VarChar(255) - NN
 
-
-
-
-
-
-
+relacoes
+├───IDrelacao - INT - PK - A.I. - NN
+│
+├───matricula - INT - FK - NN
+│
+├───idcurso - INT - FK - NN
+│
+├───idcompetencia - INT - FK - NN
+│
+└───turnos - ENUM ('M','T','N','MT','MN',TN') - NN
