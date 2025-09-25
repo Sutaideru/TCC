@@ -3,9 +3,39 @@
 
   if (isset($_POST['usuario']) || isset($_POST['senha'])) {
     if (strlen($_POST['usuario'] == 0)) {
-      echo "Preencha um usuário";
+      echo "<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='Bootstrap/bootstrap.css' rel='stylesheet'>
+    <script src='Bootstrap/bootstrap.js'></script> 
+    <script src='scripts.js'></script>
+    <link rel='icon' type='image/x-icon' href='./images/calendario.ico'>
+    <title>Agenda</title>
+    <meta>
+</head>
+<body>
+<div class='alert alert-danger' role='alert' style='display: flex; top: 20%; position: fixed; border-radius: 15px'>
+Preencha um usuário</div>
+</body>
+</html>";
     } elseif (strlen($_POST['senha']) == 0) {
-      echo "Preencha uma senha";
+      echo "<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='Bootstrap/bootstrap.css' rel='stylesheet'>
+    <script src='Bootstrap/bootstrap.js'></script> 
+    <script src='scripts.js'></script>
+    <link rel='icon' type='image/x-icon' href='./images/calendario.ico'>
+    <title>Agenda</title>
+    <meta>
+</head>
+<body>
+<div class='alert alert-danger' role='alert' style='display: flex; top: 20%; position: fixed; border-radius: 15px'>Preencha uma senha</div>
+</body>
+</html>";
     } else {
       $usuario = $connection->real_escape_string($_POST['usuario']);
       $senha = $connection->real_escape_string($_POST['senha']);
@@ -28,7 +58,24 @@
         header('Location: home.php');
 
       } else {
-        echo "Falha ao logar! Usuário ou senha incorretos";
+        echo "<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='Bootstrap/bootstrap.css' rel='stylesheet'>
+    <script src='Bootstrap/bootstrap.js'></script> 
+    <script src='scripts.js'></script>
+    <link rel='icon' type='image/x-icon' href='./images/calendario.ico'>
+    <title>Agenda</title>
+    <meta>
+</head>
+<body>
+<div class='alert alert-danger' role='alert' style='display: flex; top: 20%; position: fixed; border-radius: 15px'>
+Falha ao logar! Usuário ou senha incorretos
+</div>
+</body>
+</html>";
       }
 
     };
