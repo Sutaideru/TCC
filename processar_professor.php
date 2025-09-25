@@ -3,9 +3,9 @@ include("conexao.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebe os dados do formulário
-    $nome_professor = mysqli_real_escape_string($conection, $_POST["nome_professor"]);
+    $nome_professor = mysqli_real_escape_string($connection, $_POST["nome_professor"]);
     $competencias_professor = (int)$_POST["competencias_professor"];
-    $turnos_professor = mysqli_real_escape_string($conection, $_POST["turnos_professor"]);
+    $turnos_professor = mysqli_real_escape_string($connection, $_POST["turnos_professor"]);
     $cursos_professor = (int)$_POST["cursos_professor"];
     
     // SQL para inserir o professor na tabela
@@ -27,3 +27,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 mysqli_close($conection);
 ?>
+
