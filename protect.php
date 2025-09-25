@@ -16,10 +16,20 @@ if (!isset($_SESSION['user'])){
     <link rel='icon' type='image/x-icon' href='./images/calendario.ico'>
     <title>Agenda</title>
     <meta>
+        <style>
+      body {
+        background-image: url('./images/nome.png');
+        display: flex; /* Flexbox para centralizar */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Garante que o body tenha a altura da janela */
+        margin: 0; /* Remove margens do body */
+      }
+    </style>
 </head>
 <body>
-<div class='alert alert-danger' role='alert' style='display: flex; top: 20%; position: fixed; border-radius: 15px'>Acesso negado. 
-<a href='index.php'>Voltar para login<a>
+<div class='alert alert-danger' role='alert' style='display: flex; position: fixed; border-radius: 15px'>Acesso negado. 
+<a href='index.php' style='color:red;'>Voltar para login<a>
 </div>
 </body>
 </html>");
