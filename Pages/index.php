@@ -55,7 +55,7 @@ Preencha um usuário</div>
 
         $_SESSION['user'] = $usuario['usuario'];
 
-        header('Location: home.php');
+        header('Location: ./Pages/home.php');
 
       } else {
         echo "<!DOCTYPE html>
@@ -131,4 +131,5 @@ Falha ao logar! Usuário ou senha incorretos
 </div>
 </body>
 </html>
+
 
