@@ -1,5 +1,5 @@
 <?php
-  include"./Methods/protect.php";
+  include"protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,9 +30,9 @@
 </head>
 <body>
 <?php
-include './Methods/navbar.php'
+include 'navbar.php'
 ?>
-<form action="./Methods/processar_professor.php" method="POST">
+<form action="processar_professor.php" method="POST">
   <div class="mb-3">
     <label class="form-label">Nome</label>
     <input type="text" name="nome_professor" class="form-control" required>

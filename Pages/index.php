@@ -1,5 +1,5 @@
 <?php
-  include "./Methods/conexao.php";
+  include "conexao.php";
 
   if (isset($_POST['usuario']) || isset($_POST['senha'])) {
     if (strlen($_POST['usuario'] ) == 0) {
@@ -55,7 +55,7 @@ Preencha um usuário</div>
 
         $_SESSION['user'] = $usuario['usuario'];
 
-        header('Location: ./Pages/home.php');
+        header('Location: home.php');
 
       } else {
         echo "<!DOCTYPE html>

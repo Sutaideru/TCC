@@ -1,5 +1,5 @@
 <?php
-  include"./Methods/protect.php";
+  include"protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
 ?>
 <body>
 <?php
-include './Methods/navbar.php'
+include 'navbar.php'
 ?>
 </ul>
     <table class="table table-bordered border-primary">
@@ -70,7 +70,7 @@ include './Methods/navbar.php'
     </table>
 
     <p>
-      <a href="./Methods/logout.php">Sair</a>
+      <a href="logout.php">Sair</a>
     </p>
 </body>
 </html>
