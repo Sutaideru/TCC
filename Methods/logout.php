@@ -6,7 +6,7 @@ if(!isset($_SESSION)){
 
 session_destroy();
 
-header("Location: ./Pages/index.php");
+header("Location: index.php");
 
 
 ?>

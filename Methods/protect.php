@@ -29,7 +29,7 @@ if (!isset($_SESSION['user'])){
 </head>
 <body>
 <div class='alert alert-danger' role='alert' style='display: flex; position: fixed; border-radius: 15px'>Acesso negado. 
-<a href='./Pages/index.php' style='color:red;'>Voltar para login<a>
+<a href='index.php' style='color:red;'>Voltar para login<a>
 </div>
 </body>
 </html>");
