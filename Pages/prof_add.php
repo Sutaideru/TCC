@@ -32,29 +32,26 @@
 <?php
 include './Methods/navbar.php'
 ?>
-<form>
+<form action="./Methods/processar_professor.php" method="POST">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" name = "nome" aria-describedby="emailHelp">
+    <label class="form-label">Nome</label>
+    <input type="text" name="nome_professor" class="form-control" required>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Matricula</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    <label class="form-label">Competências</label>
+    <input type="number" name="competencias_professor" class="form-control" required>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Competencias</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    <label class="form-label">Turno</label>
+    <input type="text" name="turnos_professor" class="form-control" required>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label"></label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
+    <label class="form-label">Curso</label>
+    <input type="number" name="cursos_professor" class="form-control" required>
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Turno</label>
-    <input type="text" class="form-control" id="exampleInputPassword1">
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar Professor</button>
 </form>
 </body>
 </html>
+
 
