@@ -32,24 +32,25 @@
 <?php
 include 'navbar.php'
 ?>
-<form action="processar_professor.php" method="POST">
-  <div class="mb-3">
-    <label class="form-label">Nome</label>
+  <form action="processar_professor.php" method="POST" class="mb-3">
+  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
+    <label class="form-label">Nome </label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
-  <div class="mb-3">
-    <label class="form-label">Competências</label>
-    <input type="number" name="competencias_professor" class="form-control" required>
+  <div style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
+    <label class="form-label">Turnos </label>
+    <select name="turnos_professor" required class="mb-3" style= "display: flex; width: 300px; justify-content: center; align-items: center; margin-left: 2%">
+      <option value=""> Selecione o turno </option>
+      <option value="M">Manhã</option>
+      <option value="T">Tarde</option>
+      <option value="N">Noite</option>
+      <option value="MT">Manhã e Tarde</option>
+      <option value="MN">Manhã e Noite</option>
+      <option value="TN">Tarde e Noite</option>
+      <option value="MTN">Manhã, Tarde e Noite</option>
+    </select>
   </div>
-  <div class="mb-3">
-    <label class="form-label">Turno</label>
-    <input type="text" name="turnos_professor" class="form-control" required>
-  </div>
-  <div class="mb-3">
-    <label class="form-label">Curso</label>
-    <input type="number" name="cursos_professor" class="form-control" required>
-  </div>
-  <button type="submit" class="btn btn-primary">Cadastrar Professor</button>
+  <button type="submit" class="btn btn-primary" style= "display: flex; justify-content: center; margin-left: 45%">Cadastrar Professor</button>
 </form>
 </body>
 </html>
