@@ -4,15 +4,13 @@ include("conexao.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebe os dados do formulário
     $nome_professor = mysqli_real_escape_string($connection, $_POST["nome_professor"]);
-    $competencias_professor = (int)$_POST["competencias_professor"];
     $turnos_professor = mysqli_real_escape_string($connection, $_POST["turnos_professor"]);
-    $cursos_professor = (int)$_POST["cursos_professor"];
     
     // SQL para inserir o professor na tabela
-    $sql = "INSERT INTO professores (nome_professor, competencias_professor, turnos_professor, cursos_professor) 
-            VALUES ('$nome_professor', $competencias_professor, '$turnos_professor', $cursos_professor)";
+    $sql = "INSERT INTO professores (nome_professor, turnos_professor) 
+            VALUES ('$nome_professor', '$turnos_professor')";
     
-    if (mysqli_query($conection, $sql)) {
+    if (mysqli_query($connection, $sql)) {
         echo "<script>
                 alert('Professor cadastrado com sucesso!');
                 window.location.href = 'prof_add.php';

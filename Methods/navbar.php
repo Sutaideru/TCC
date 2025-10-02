@@ -13,13 +13,10 @@
     <a class="nav-link active" aria-current="page" href="home.php" style="color:white;">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="novo_prof.php" style="color:white;">Novo Prof</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="prof_add.php" style="color:white;">Prof Add</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="index.php" style="color:white;">Index</a>
+  <li>
+    <a class="nav-link active" aria-current="page" href="logout.php" style="color:white;">Sair</a>
   </li>
 </ul>
 </body>
