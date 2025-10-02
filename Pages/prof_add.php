@@ -33,13 +33,13 @@
 include 'navbar.php'
 ?>
   <form action="processar_professor.php" method="POST" class="mb-3">
-  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
-    <label class="form-label">Nome </label>
+  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
+    <label class="form-label" style="margin-right: 32px">Nome</label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
   <div style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
     <label class="form-label">Turnos </label>
-    <select name="turnos_professor" required class="mb-3" style= "display: flex; width: 300px; justify-content: center; align-items: center; margin-left: 2%">
+    <select name="turnos_professor" required class="mb-3" style= "display: flex; width: 300px; justify-content: center; align-items: center; margin-left: 2%; border-radius: 5px">
       <option value=""> Selecione o turno </option>
       <option value="M">Manhã</option>
       <option value="T">Tarde</option>
@@ -54,5 +54,3 @@ include 'navbar.php'
 </form>
 </body>
 </html>
-
-
