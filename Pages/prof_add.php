@@ -33,7 +33,7 @@
 include 'navbar.php'
 ?>
   <form action="processar_professor.php" method="POST" class="mb-3">
-  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
+  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px;">
     <label class="form-label" style="margin-right: 32px">Nome</label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
@@ -54,3 +54,4 @@ include 'navbar.php'
 </form>
 </body>
 </html>
+
