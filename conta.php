@@ -116,7 +116,7 @@ if ($result && $result->num_rows > 0) {
             var confirmar = document.getElementById('confirmar_senha').value;
             
             if (senha !== confirmar) {
-                alert('As senhas não coincidem!');
+                alert('As senhas precisam ser iguais!');
                 return false;
             }
             
