@@ -68,10 +68,6 @@ include 'navbar.php'
             <td>a</td>
         </tr>
     </table>
-
-    <p>
-      <a href="logout.php">Sair</a>
-    </p>
 </body>
 </html>
 
