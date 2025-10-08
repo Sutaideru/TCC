@@ -70,6 +70,3 @@ include 'navbar.php'
     </table>
 </body>
 </html>
-
-
-
