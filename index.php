@@ -123,11 +123,11 @@ Falha ao logar! Usuário ou senha incorretos
       <label for="exampleInputEmail1" class="form-label">Usuário</label>
       <input type="text" class="form-control" id="exampleInputUsername1" name="usuario">
     </div>
-    <div class="input group mb-3" style="width: 240px;">
+    <div class="mb-3" style="width: 240px;">
       <label for="exampleInputPassword1" class="form-label">Senha</label>
       <div class="input-group">
         <input type="password" class="form-control" id="senha" name="senha">
-        <button type="button" id="btn-senha" onclick="mostrarSenha()">
+        <button type="button" id="btn-senha" onclick="mostrarSenha()" style="position: absolute; margin-left: 200px; z-index: 100000; border: none; margin-top: 5px;">
           <i class="bi bi-eye-fill"></i>
         </button>
       </div>
