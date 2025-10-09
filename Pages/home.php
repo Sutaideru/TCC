@@ -21,7 +21,7 @@
 include 'navbar.php'
 ?>
 </ul>
-    <table class="table table-bordered border-primary">
+    <table class="table table-bordered border-primary" style="margin-top: 90px;">
         <tr>
             <th>Dom</th>
             <th>Seg</th>
