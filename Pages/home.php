@@ -13,9 +13,6 @@
     <title>Agenda</title>
     <meta>
 </head>
-<?php 
-  echo $_SESSION['user'];
-?>
 <body>
 <?php
 include 'navbar.php'
