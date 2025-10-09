@@ -34,11 +34,11 @@ include 'navbar.php'
 ?>
   <form action="processar_professor.php" method="POST" class="mb-3">
   <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
-    <label class="form-label">Matrícula</label>
+    <label class="form-label" style="margin-right: 2%;">Matrícula</label>
     <input type="number" name="matricula" class="form-control" required>
   </div>
   <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
-    <label class="form-label">Nome </label>
+    <label class="form-label" style="margin-right: 42px;">Nome </label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
   <div style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
@@ -77,5 +77,6 @@ include 'navbar.php'
 
 </body>
 </html>
+
 
 
