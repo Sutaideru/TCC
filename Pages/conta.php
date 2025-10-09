@@ -83,11 +83,6 @@ if ($result && $result->num_rows > 0) {
             <div class="info-value"><?php echo htmlspecialchars($usuario['usuario']); ?></div>
         </div>
         
-        <div class="info-row">
-            <div class="info-label">Status da Conta:</div>
-            <div class="info-value"><span class="badge bg-success">Ativa</span></div>
-        </div>
-        
         <div class="password-section">
             <h4 class="mb-3" style="color: #005caa;">Alterar Senha</h4>
             <form method="POST" action="change_pass.php" onsubmit="return validarSenha()">
