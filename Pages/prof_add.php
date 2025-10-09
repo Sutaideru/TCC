@@ -35,9 +35,9 @@ include 'navbar.php'
   <form action="processar_professor.php" method="POST" class="mb-3">
   <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
     <label class="form-label">Matrícula</label>
-    <input type="text" name="matricula" class="form-control" required>
+    <input type="number" name="matricula" class="form-control" required>
   </div>
-  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
+  <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
     <label class="form-label">Nome </label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
@@ -56,6 +56,25 @@ include 'navbar.php'
   </div>
   <button type="submit" class="btn btn-primary" style= "display: flex; justify-content: center; margin-left: 45%">Cadastrar Professor</button>
 </form>
+
+<div class="card-body">
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Matricula</th>
+      <th>Nome</th>
+      <th>Turnos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>A</td>
+      <td>MTN</td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
 </html>
 
