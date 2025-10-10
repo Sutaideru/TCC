@@ -4,7 +4,7 @@ Arthur Novak <br>
 Vitor Prado <br>
 Vinicius Staidel <br>
 
-Estrutura de banco de dados (a incorporar)
-Materia - id, sigla, carga-horária, ... 
-Curso - id, sigla, ...
+Estrutura de banco de dados (a incorporar) <br>
+Materia - id, sigla, carga-horária, ... <br>
+Curso - id, sigla, ... <br>
 ...
