@@ -5,7 +5,7 @@ Vitor Prado <br>
 Vinicius Staidel <br>
 
 Estrutura de banco de dados (a incorporar) <br>
-Professor - id, matricula, cpf <br>
+Professor - matricula, cpf <br>
 Materia - id, sigla, carga-horária, ... <br>
 Curso - id, sigla, ... <br>
 ...
