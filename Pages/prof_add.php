@@ -1,5 +1,6 @@
 <?php
-  include"protect.php";
+  include "protect.php";
+  include "conexao.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,11 +35,11 @@ include 'navbar.php'
 ?>
   <form action="processar_professor.php" method="POST" class="mb-3">
   <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%; margin-top: 300px">
-    <label class="form-label" style="margin-right: 2%;">Matrícula</label>
+    <label class="form-label">Matrícula</label>
     <input type="number" name="matricula" class="form-control" required>
   </div>
   <div class="mb-3" style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
-    <label class="form-label" style="margin-right: 42px;">Nome </label>
+    <label class="form-label">Nome </label>
     <input type="text" name="nome_professor" class="form-control" required>
   </div>
   <div style= "display: flex; width: 1000px; justify-content: center; align-items: center; margin-left: 25%;">
@@ -67,16 +68,25 @@ include 'navbar.php'
     </tr>
   </thead>
   <tbody>
+    <?php
+      $sql = 'SELECT * FROM professores';
+      $usuarios = mysqli_query($connection, $sql);
+      if (mysqli_num_rows($usuarios) > 0){
+        foreach ($usuarios as $usuario){
+    ?>
     <tr>
-      <td>12</td>
-      <td>A</td>
-      <td>MTN</td>
+      <td><?=$usuario['matricula'] ?></td>
+      <td><?=$usuario['nome_professor'] ?></td>
+      <td><?=$usuario['turnos_professor'] ?></td>
     </tr>
+    <?php
+      }
+    } else {
+      echo "<h5>Nenhum professor encontrado</h5>";
+    }
+    ?>
   </tbody>
 </table>
 
 </body>
 </html>
-
-
-
