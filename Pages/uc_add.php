@@ -1,5 +1,6 @@
 <?php
-  include"protect.php";
+  include "protect.php";
+  include "conexao.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +53,36 @@ include 'navbar.php'
   </div>
   <button type="submit" class="btn btn-primary" style= "display: flex; justify-content: center; margin-left: 45%">Cadastrar UC</button>
 </form>
+
+<div class="card-body">
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>UC</th>
+      <th>Turnos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+      $sql = 'SELECT * FROM cursos';
+      $usuarios = mysqli_query($connection, $sql);
+      if (mysqli_num_rows($usuarios) > 0){
+        foreach ($usuarios as $usuario){
+    ?>
+    <tr>
+      <td><?=$usuario['IDcurso'] ?></td>
+      <td><?=$usuario['nome_curso'] ?></td>
+      <td><?=$usuario['turnos_curso'] ?></td>
+    </tr>
+    <?php
+      }
+    } else {
+      echo "<h5>Nenhum professor encontrado</h5>";
+    }
+    ?>
+  </tbody>
+</table>
 </body>
 </html>
 
