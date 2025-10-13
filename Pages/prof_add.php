@@ -78,6 +78,13 @@ include 'navbar.php'
       <td><?=$usuario['matricula'] ?></td>
       <td><?=$usuario['nome_professor'] ?></td>
       <td><?=$usuario['turnos_professor'] ?></td>
+      <td>
+        <a href='' class="btn btn-secondary btn-sm" >Visualizar</a>
+        <a  href='' class="btn btn-success btn-sm" >Editar</a>
+        <form action='delete_professor.php' method = 'POST' class ='d-inline'>
+          <button type='submit' name='delete-usuario' value='<?=$usuario['matricula']?>' class='btn btn-danger btn-sm'>Excluir</button>
+        </form>
+      </td>
     </tr>
     <?php
       }
