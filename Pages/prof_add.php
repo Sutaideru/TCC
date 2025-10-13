@@ -157,10 +157,10 @@
       <table class="table table-bordered table-striped">
         <thead>
           <tr>
-            <th>Matrícula</th>
-            <th>Nome</th>
-            <th>Turnos</th>
-            <th>Ações</th>
+            <th style="color: black;">Matrícula</th>
+            <th style="color: black;">Nome</th>
+            <th style="color: black;">Turnos</th>
+            <th style="color: black;">Ações</th>
           </tr>
         </thead>
         <tbody>
@@ -175,8 +175,8 @@
             <td><?=$usuario['nome_professor']?></td>
             <td><?=$usuario['turnos_professor']?></td>
             <td>
-              <a href="#" class="btn btn-secondary btn-sm">Visualizar</a>
-              <a href="#" class="btn btn-success btn-sm">Editar</a>
+              <a href="usuario-view.php" id="<?=$usuario['matricula']?>" class="btn btn-secondary btn-sm">Visualizar</a>
+              <a href="usuario-edit.php" id="<?=$usuario['matricula']?>" class="btn btn-success btn-sm">Editar</a>
               <form action="delete_professor.php" method="POST" class="d-inline">
                 <button type="submit" name="delete-usuario" value="<?=$usuario['matricula']?>" class="btn btn-danger btn-sm">Excluir</button>
               </form>
