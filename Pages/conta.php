@@ -29,33 +29,95 @@ if ($result && $result->num_rows > 0) {
     <title>Minha Conta - Agenda</title>
 
     <style>
-    body {
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        nav {
+            height: 60px; 
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            position: sticky; 
+            top: 0;
+            z-index: 1000;
+        }
+
+
+        main.content-wrapper {
+            flex: 1; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            padding: 1rem;
+        }
+
+        .caixa-exemplo {
+            width: 100%;
+            max-width: 700px;
+            padding: 2rem 2rem;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            border: none;
+            height: 450px;
+        }
+
+        .welcome-message, 
+        .info-row {
     
-    .caixa-exemplo {
-        width: 33%;
-        height: 75%;
-        padding: 10px;
-        background-color: rgba(240, 240, 240, 1);
-        border-radius: 15px;
-        border: 2px solid black;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin-left: 35%;
-        margin-top: 90px;
-        flex-direction: column;
-    }
+        }
+
+        .content-main {
+            flex-grow: 1;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+
+        .caixa-exemplo h4 {
+            color: #005caa;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        small.text-muted {
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+
+        .mt-4 {
+            width: 100%;
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
-    
-    <div class="caixa-exemplo">
-        <div class="welcome-message" class="">
+    <main class="content-wrapper">
+        <div class="caixa-exemplo">
+    <div class="content-main">
+        <div class="welcome-message">
             <h1 class="mb-2">Bem-vindo, <?php echo htmlspecialchars($usuario['usuario']); ?>!</h1>
             <p class="mb-0" style="margin-bottom: 30px">Esta é a sua página de conta no Sistema de Agenda.</p>
         </div>
@@ -65,10 +127,16 @@ if ($result && $result->num_rows > 0) {
         <div class="info-row">
             <div class="info-label">Nome de Usuário: <?php echo htmlspecialchars($usuario['usuario']); ?></div>
         </div>
-        <div class="mt-4">
-            <a href="home.php" class="btn btn-primary me-2">Voltar para Home</a>
-            <a href="logout.php" class="btn btn-outline-danger" style="margin-right: 20px; margin-left: 10px;">Sair</a>
-            <a href="alt_pass.php" class="btn btn-warning" link=href"alt_pass.php">Alterar Senha</a>
     </div>
+
+    <div class="button-group">
+        <a href="home.php" class="btn btn-primary me-2" style="align-self: left">Voltar para Home</a>
+        <a href="alt_pass.php" class="btn btn-warning" style="align-self: right">Alterar Senha</a>
+        <a href="logout.php" class="btn btn-danger" style="align-self: center">Sair</a>
+    </div>
+</div>
+
+    </main>
 </body>
+
 </html>
