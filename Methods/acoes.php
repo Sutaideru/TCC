@@ -43,4 +43,9 @@ if (isset($_POST['update_usuario'])){
         exit;
     }
 }
+
+if (isset($_POST['delete_professor'])){
+    
+    echo $usuario_id; exit;
+}
 ?>
