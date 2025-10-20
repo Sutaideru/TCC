@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Professor</title>
+    <style>
+        body {
+            background-color: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        }
+    </style>
     <?php 
         include 'navbar.php'; 
         include 'conexao.php'; 
@@ -44,7 +49,7 @@
                                 <input type="text" name="turnos_professor" value="<?= $usuario['turnos_professor'] ?>" class="form-control" />
                             </div>
                             <div class="mb-3">
-                                    <button type="submit" name="update_usuario" class="btn btn-primary">Salvar</button>
+                                <button type="submit" name="update_usuario" class="btn btn-primary">Salvar</button>
                             </div>
                         </form>
                         <?php 

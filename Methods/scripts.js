@@ -1,7 +1,6 @@
 function mostrarSenha(){
 	var inputPass = document.getElementById('senha');
 	
-    // CORREÇÃO: Selecionar o elemento <i> dentro do botão
 	var icon = document.getElementById('btn-senha').querySelector('i'); 
 
 	if (inputPass.type === 'password') {

@@ -2,11 +2,10 @@
 include("conexao.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Recebe os dados do formulário
+
     $nome_curso = mysqli_real_escape_string($connection, $_POST["nome_curso"]);
     $turnos_curso = mysqli_real_escape_string($connection, $_POST["turnos_curso"]);
     
-    // SQL para inserir o curso na tabela
     $sql = "INSERT INTO cursos (nome_curso, turnos_curso) 
             VALUES ('$nome_curso', '$turnos_curso')";
     
@@ -23,6 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-mysqli_close($conection);
+mysqli_close($connection);
 ?>
 

@@ -2,26 +2,6 @@
 session_start();
 require 'conexao.php';
 
-if (isset($_POST['create_usuario'])){
-    $matricula = mysqli_real_escape_string($connection, trim($_POST['matricula']));
-    $nome_professor = mysqli_real_escape_string($connection, trim($_POST['nome_professor']));
-    $turnos_professor = mysqli_real_escape_string($connection, trim($_POST['turnos_professor']));
-
-    $sql = "INSERT INTO professores (matricula, nome_professor, turnos_professor) VALUES ('$matricula', '$nome_professor', '$turnos_professor')";
-
-    mysqli_query($connection, $sql);
-
-    if (mysqli_affected_rows($connection) > 0){
-        $_SESSION['mensagem'] = 'Professor adicionado com sucesso';
-        header('Location: home.php');
-        exit;
-    } else {
-        $_SESSION['mensagem'] = 'Erro ao adicionar professor';
-        header('Location: home.php');
-        exit;
-    }
-}
-
 if (isset($_POST['update_usuario'])){
     $usuario_id = mysqli_real_escape_string($connection, $_POST['usuario_id']);
 
@@ -45,7 +25,19 @@ if (isset($_POST['update_usuario'])){
 }
 
 if (isset($_POST['delete_professor'])){
-    
-    echo $usuario_id; exit;
+    $usuario_id = mysqli_real_escape_string($connection, $_POST['delete_professor']);
+
+    $sql =  "DELETE FROM professores WHERE matricula = '$usuario_id'";
+    mysqli_query($connection, $sql);
+
+    if (mysqli_affected_rows($connection) > 0){
+        $_SESSION['mensagem'] = 'Professor deletado com sucesso';
+        header('Location: prof_add.php');
+        exit;
+    } else {
+        $_SESSION['mensagem'] = 'Erro ao deletar professor';
+        header('Location: prof_add.php');
+        exit;
+    }
 }
 ?>
