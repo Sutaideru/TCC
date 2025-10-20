@@ -142,6 +142,13 @@ h5 {
             <td><?=$usuario['IDcurso'] ?></td>
             <td><?=$usuario['nome_curso'] ?></td>
             <td><?=$usuario['turnos_curso'] ?></td>
+            <td>
+              <a href="uc-view.php?matricula=<?=$usuario['IDcurso']?>" class="btn btn-secondary btn-sm">Visualizar</a>
+              <a href="uc-edit.php?matricula=<?=$usuario['IDcurso']?>" class="btn btn-success btn-sm">Editar</a>
+              <form action="acoes.php" method="POST" class="d-inline">
+                <button type="submit" action="acoes.php" onclick="return confirm('Certeza que deseja excluir esta UC?')" name="delete_uc" value="<?=$usuario['IDcurso']?>" class="btn btn-danger btn-sm">Excluir</button>
+              </form>
+            </td>
           </tr>
           <?php
               }
