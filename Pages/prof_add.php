@@ -14,11 +14,12 @@
 
   <style>
     body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
  
@@ -177,8 +178,8 @@
             <td>
               <a href="usuario-view.php?matricula=<?=$usuario['matricula']?>" class="btn btn-secondary btn-sm">Visualizar</a>
               <a href="usuario-edit.php?matricula=<?=$usuario['matricula']?>" class="btn btn-success btn-sm">Editar</a>
-              <form action="delete_professor.php" method="POST" class="d-inline">
-                <button type="submit" name="delete-usuario" value="<?=$usuario['matricula']?>" class="btn btn-danger btn-sm">Excluir</button>
+              <form action="acoes.php" method="POST" class="d-inline">
+                <button type="submit" action="acoes.php" onclick="return confirm('Certeza que deseja excluir este professor?')" name="delete_professor" value="<?=$usuario['matricula']?>" class="btn btn-danger btn-sm">Excluir</button>
               </form>
             </td>
           </tr>

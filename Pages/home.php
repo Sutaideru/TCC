@@ -12,6 +12,16 @@
     <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
     <title>Agenda</title>
     <meta>
+    <style>
+         body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
 <?php

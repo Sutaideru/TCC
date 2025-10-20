@@ -12,13 +12,14 @@
 <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
 <title>Cadastro de UC</title>
 <style>
-body {
-  background-color: white;
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 nav {
   position: fixed;
   top: 0;
