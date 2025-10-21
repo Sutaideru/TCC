@@ -42,26 +42,26 @@ if (isset($_POST['delete_professor'])){
 }
 
 if (isset($_POST['update_uc'])){
-    $usuario_id = mysqli_real_escape_string($connection, $_POST['uc_id']);
+    $uc_id = mysqli_real_escape_string($connection, $_POST['uc_id']);
 
-    $IDcurso = mysqli_real_escape_string($connection, trim($_POST['IDcurso']));
     $nome_curso = mysqli_real_escape_string($connection, trim($_POST['nome_curso']));
     $turnos_curso = mysqli_real_escape_string($connection, trim($_POST['turnos_curso']));
 
-    $sql = "UPDATE cursos SET IDcurso = '$IDcurso', nome_curso = '$nome_curso', turnos_curso = '$turnos_curso' WHERE IDcurso = '$uc_id'";
+    $sql = "UPDATE cursos SET nome_curso = '$nome_curso', turnos_curso = '$turnos_curso' WHERE IDcurso = '$uc_id'";
 
     mysqli_query($connection, $sql);
 
     if (mysqli_affected_rows($connection) > 0){
-        $_SESSION['mensagem'] = 'Professor atualizado com sucesso';
+        $_SESSION['mensagem'] = 'UC atualizada com sucesso';
         header('Location: uc_add.php');
         exit;
     } else {
-        $_SESSION['mensagem'] = 'Erro ao atualizar professor';
+        $_SESSION['mensagem'] = 'Erro ao atualizar UC';
         header('Location: uc_add.php');
         exit;
     }
 }
+
 
 if (isset($_POST['delete_uc'])){
     $uc_id = mysqli_real_escape_string($connection, $_POST['delete_uc']);
