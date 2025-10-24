@@ -1,5 +1,5 @@
 <?php
-  include"protect.php";
+  include "protect.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,4 +76,5 @@ include 'navbar.php'
         </tr>
     </table>
 </body>
+
 </html>
