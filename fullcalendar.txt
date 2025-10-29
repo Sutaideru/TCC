@@ -1,0 +1,145 @@
+Neste tutorial, César ensina a usar o FullCalendar com PHP, traduzindo-o para o português e listando eventos de um banco de dados. Ele demonstra a configuração do ambiente, a criação de arquivos necessários e a implementação de eventos dinâmicos, culminando na exibição de um calendário funcional.
+
+
+Destaques:
+00:06 Neste tutorial, César ensina como utilizar o Full Calendar em um projeto web. Ele aborda desde a instalação até a personalização do calendário com eventos dinâmicos.
+          -O vídeo também ensina como listar eventos do banco de dados no calendário. Isso permite que os usuários vejam informações dinâmicas em tempo real, melhorando a interação.
+          -César demonstra como configurar o ambiente de desenvolvimento usando o Onep Server e o Visual Studio Code. Ele destaca a importância de usar a versão correta do Full Calendar.
+          -O Full Calendar é uma biblioteca poderosa que permite a visualização de eventos em um calendário interativo. É possível personalizar a aparência e o comportamento dos eventos.
+06:05 O vídeo aborda como personalizar um calendário utilizando CSS e JavaScript, além de traduzir o conteúdo para o português. O foco está na inclusão correta dos arquivos e na configuração de estilos.
+          -É importante definir as margens e o padding corretamente para centralizar o calendário. Utilizar 40 pixels na parte superior e 10 pixels nas laterais melhora a estética.
+          -A escolha entre CSS compactado e não compactado é discutida. O CSS compactado ocupa menos espaço e é recomendado para um carregamento mais eficiente.
+          -O processo de tradução do JavaScript para o português é detalhado. É necessário adicionar o arquivo de localização corretamente e forçar a configuração para o idioma desejado.
+12:11 O vídeo explica como organizar e inicializar um arquivo JavaScript separado, melhorando a estrutura do projeto. A inclusão correta do arquivo custom.js é essencial para o funcionamento adequado do código.
+          -A criação do arquivo custom.js permite uma melhor organização do código, facilitando a manutenção e a legibilidade do projeto. Isso é crucial em projetos mais complexos.
+          -O uso de seletores e eventos no JavaScript é demonstrado, mostrando como manipular elementos HTML de forma eficiente. Isso ajuda a construir interações dinâmicas no site.
+          -A implementação de funcionalidades como arrastar e redimensionar eventos no calendário é abordada, permitindo uma interação mais intuitiva para o usuário. Isso melhora a experiência geral do usuário.
+18:19 O vídeo ensina como criar uma base de dados e conectar um projeto PHP a ela. O processo inclui duplicar arquivos, configurar colunas e inserir dados necessários.
+          -Primeiro, o autor cria um arquivo PHP para listar eventos e explica como fazer uma requisição para buscar dados de um banco. Isso é crucial para o projeto.
+          -Em seguida, é demonstrado como acessar o phpMyAdmin para gerenciar o banco de dados. O autor utiliza credenciais específicas para criar uma nova base de dados.
+          -Finalmente, o vídeo mostra como conectar o arquivo PHP ao banco de dados. O autor apresenta o código necessário e verifica a conexão realizada com sucesso.
+24:22 O vídeo discute como estabelecer uma conexão com um banco de dados e executar consultas para recuperar eventos. Além disso, apresenta práticas recomendadas para manipulação de dados utilizando PHP.
+          -A importância de utilizar variáveis de conexão corretamente para acessar o banco de dados e garantir que as consultas funcionem adequadamente. Isso evita erros no processamento.
+          -Práticas recomendadas ao realizar consultas, como evitar o uso do asterisco para retornar todas as colunas, focando apenas nas necessárias para otimizar o desempenho.
+          -A utilização de laços de repetição para percorrer os registros recuperados e a importância de extrair dados de forma eficiente utilizando a função 'extract' no PHP.
+30:28 O vídeo aborda a manipulação de eventos em um calendário dinâmico, permitindo que as datas e horários sejam ajustados automaticamente conforme a data atual. Ele também mostra como criar e modificar eventos específicos com horários determinados.
+          -A importância de acessar dados dinâmicos é destacada, garantindo que as informações sejam sempre atualizadas e relevantes ao usuário, independentemente da data em que acessa.
+          -O vídeo explica como modificar a estrutura do banco de dados para incluir horários específicos, essencial para eventos que ocorrem em momentos determinados ao longo do dia.
+          -Mostra-se a possibilidade de adicionar novos eventos ao calendário através de um formulário, incentivando a interação do usuário e a personalização de eventos conforme suas necessidades.
+
+
+
+
+## 00:00:00 - 00:00:48
+
+Introdução ao FullCalendar com PHP
+
+
+- 00:00:00  O tutorial demonstrará como implementar o FullCalendar, localizá-lo para português e exibir eventos de um banco de dados.
+
+- 00:00:15  O objetivo é listar eventos dinâmicos do banco de dados dentro do projeto FullCalendar.
+
+- 00:00:31  O tutorial começará mostrando como usar o FullCalendar, especificamente a versão 6.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
+
+
+
+
+## 00:00:48 - 00:04:14
+
+Configurando o FullCalendar com PHP
+
+
+- 00:00:48  O tutorial começa configurando o servidor local (WampServer), Google Chrome e Visual Studio Code, e então acessando o diretório do projeto dentro do WampServer.
+
+- 00:01:21  Uma estrutura HTML5 básica é criada em um arquivo 'index.php', com a página definida para Português do Brasil e um título relacionado ao FullCalendar.
+
+- 00:02:08  A documentação do FullCalendar é acessada, confirmando a versão 6.1 como a que será utilizada, e exemplos de eventos diários e com horários específicos são revisados.
+
+- 00:02:55  A biblioteca FullCalendar é incluída no arquivo 'index.php' usando um CDN, e uma div com o ID 'calendar' é adicionada para renderizar o calendário na página, exibindo-o com sucesso.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
+
+
+
+
+## 00:04:14 - 00:08:39
+
+Configurando o FullCalendar e Estilos Básicos
+
+
+- 00:04:14  O vídeo demonstra o download da biblioteca FullCalendar diretamente para o diretório do projeto, em vez de usar um CDN.
+
+- 00:05:18  Ele mostra como extrair e copiar o CSS necessário de um exemplo do FullCalendar para um arquivo CSS personalizado dentro do projeto.
+
+- 00:05:51  O estilo CSS básico é aplicado aos elementos do corpo e do calendário, incluindo margens, preenchimento, configurações de fonte e centralização do calendário.
+
+- 00:07:23  O vídeo se prepara para a localização, movendo os arquivos JavaScript do FullCalendar baixados para um diretório 'JS' dentro do projeto, preferindo a versão minificada.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
+
+
+
+
+
+
+## 00:08:39 - 00:13:54
+
+Configurando o FullCalendar com PHP e Eventos de Banco de Dados
+
+
+- 00:08:39  O vídeo começa confirmando que os arquivos JavaScript e CSS compactados estão carregando corretamente, notando uma personalização diferente no CSS.
+
+- 00:08:55  Para traduzir o calendário para português, o arquivo 'locales' do pacote 'Core' é copiado para o diretório JavaScript.
+
+- 00:09:53  A localidade 'pt-br' é então explicitamente definida na inicialização do FullCalendar para forçar a tradução para português do Brasil, o que é confirmado pelo calendário exibindo outubro em português.
+
+- 00:12:14  Para gerenciar o código JavaScript crescente, um novo arquivo chamado 'custom.js' é criado no diretório JS, e o script de inicialização do calendário é movido para lá para manter o arquivo 'index.php' mais limpo.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
+
+
+
+
+## 00:13:54 - 00:18:43
+
+Configurando o FullCalendar com Eventos Estáticos
+
+
+- 00:13:54  O FullCalendar é inicializado quando o documento HTML é totalmente carregado, garantindo que todos os elementos estejam disponíveis antes de renderizar o calendário.
+
+- 00:14:59  O cabeçalho do calendário é configurado para incluir botões de 'anterior', 'próximo' e 'hoje', e a data inicial é definida para a data atual.
+
+- 00:15:56  O idioma do calendário é definido para português (Brasil) especificando a localidade, que pode ser alterada para outros idiomas disponíveis.
+
+- 00:17:09  Recursos interativos como arrastar e redimensionar eventos são habilitados, e eventos estáticos são adicionados ao calendário para fins de demonstração.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
+
+
+
+
+
+## 00:18:43 - 00:34:26
+
+Configurando o FullCalendar com PHP e Eventos de Banco de Dados
+
+
+- 00:18:43  O vídeo começa mostrando como fazer uma solicitação para um arquivo PHP chamado 'listar_evento.php' para listagem de eventos, o que requer a criação deste novo arquivo PHP.
+
+- 00:19:15  Em seguida, ele orienta a criação de um banco de dados chamado 'celk' no PHPMyAdmin, definindo uma tabela com colunas 'id', 'title', 'color', 'start' e 'end', e preenchendo-o com seis eventos de amostra.
+
+- 00:23:22  Um arquivo 'con.php' é criado para estabelecer uma conexão de banco de dados usando PDO, com credenciais para localhost, usuário root, sem senha e o banco de dados 'celk'.
+
+- 00:24:40  O arquivo 'listar_evento.php' é então desenvolvido para consultar o banco de dados em busca de eventos, preparar e executar a instrução SQL e buscar os resultados em um array.
+
+- 00:30:07  Finalmente, o array de eventos é codificado em JSON e retornado ao JavaScript, e o vídeo demonstra como atualizar o calendário para exibir eventos com horários específicos, modificando os tipos de coluna do banco de dados para 'datetime'.
+
+
+> Generated by WayinVideo | https://wayin.ai/wayinvideo/
