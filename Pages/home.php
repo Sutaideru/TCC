@@ -1,5 +1,6 @@
 <?php
   include "protect.php";
+  include 'navbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,70 +12,28 @@
     <script src="scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
     <title>Agenda</title>
-    <meta>
+    <script src='js/index.global.min.js'></script>
+    <link href="css/custom.css" rel="stylesheet">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+    </script>
     <style>
          body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
             min-height: 100vh;
-            display: flex;
             flex-direction: column;
         }
     </style>
 </head>
 <body>
-<?php
-include 'navbar.php'
-?>
-</ul>
-    <table class="table table-bordered border-primary" style="margin-top: 90px;">
-        <tr>
-            <th>Dom</th>
-            <th>Seg</th>
-            <th>Ter</th>
-            <th>Qua</th>
-            <th>Qui</th>
-            <th>Sex</th>
-            <th>Sab</th>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-        </tr>
-        <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>a</td>
-        </tr>
-    </table>
+    <div id="calendar" style="margin-top: 5vh;"></div>
 </body>
-
 </html>
