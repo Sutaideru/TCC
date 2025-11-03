@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar UC</title>
     <style>
         body {
-            background-color: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
         }
     </style>
     <?php 
@@ -26,24 +26,52 @@
                     </div>
                     <div class="card-body">
                         <?php 
-                        if (isset($_GET['IDcurso'])) {
-                            $IDcurso = mysqli_real_escape_string($connection, $_GET['IDcurso']);
-                            $sql = "SELECT * FROM cursos WHERE IDcurso = '$IDcurso'";
+                        if (isset($_GET['IDuc'])) {
+                            $IDuc = mysqli_real_escape_string($connection, $_GET['IDuc']);
+                            $sql = "SELECT * FROM unidadescurriculares WHERE IDuc = '$IDuc'";
                             $query = mysqli_query($connection, $sql);
                         
                             if (mysqli_num_rows($query) > 0) {
                                 $uc = mysqli_fetch_array($query);
                         ?>
                         <form action="acoes.php" method="POST">
-                            <input type="hidden" name="uc_id" value="<?= $uc['IDcurso'] ?>">
+                            <input type="hidden" name="uc_id" value="<?= $uc['IDuc'] ?>">
+
                             <div class="mb-3">
-                                <label>Nome</label>
-                                <input type="text" name="nome_curso" value="<?= $uc['nome_curso'] ?>" class="form-control" />
+                                <label>Nome da UC</label>
+                                <input type="text" name="nome_uc" value="<?= $uc['nome_uc'] ?>" class="form-control" />
                             </div>
+
                             <div class="mb-3">
                                 <label>Turnos</label>
-                                <input type="text" name="turnos_curso" value="<?= $uc['turnos_curso'] ?>" class="form-control" />
+                                <input type="text" name="turnos_uc" value="<?= $uc['turnos_uc'] ?>" class="form-control" />
                             </div>
+
+                            <div class="mb-3">
+                                <label>Carga Horária Total</label>
+                                <input type="number" name="carga_horaria_total_uc" value="<?= $uc['carga_horaria_total_uc'] ?>" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Carga Horária por Dia</label>
+                                <input type="number" name="carga_horaria_dia_uc" value="<?= $uc['carga_horaria_dia_uc'] ?>" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Sigla da UC</label>
+                                <input type="text" name="sigla_uc" value="<?= $uc['sigla_uc'] ?>" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Curso / Módulo</label>
+                                <input type="text" name="curso_modulo_uc" value="<?= $uc['curso_modulo_uc'] ?>" class="form-control" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Local</label>
+                                <input type="text" name="local" value="<?= $uc['local'] ?>" class="form-control" />
+                            </div>
+
                             <div class="mb-3">
                                 <button type="submit" name="update_uc" class="btn btn-primary">Salvar</button>
                             </div>
