@@ -64,7 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="Bootstrap/bootstrap.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'>
     <script src="Bootstrap/bootstrap.js"></script>
+    <script src="scripts.js"></script>
     <title>Alterar Senha</title>
     <style>
         * { box-sizing: border-box; }
@@ -90,6 +92,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         .mt-4 {
             width: 100%; margin-top: 1.5rem; display: flex; justify-content: space-between;
         }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding-right: 40px;
+        }
+
+        .input-container button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            color: #555;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -101,12 +125,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form method="POST" action="" onsubmit="return validarSenha()">
             <div class="mb-3">
                 <label for="nova_senha" class="form-label">Nova Senha:</label>
-                <input type="password" class="form-control" id="nova_senha" name="nova_senha" required minlength="8" style="width: 350px" />
-                <small class="text-muted">Mínimo de 8 caracteres, com maiúscula, minúscula, número e caractere especial</small>
+                <div class="input-container">
+                    <input type="password" class="form-control" id="nova_senha" name="nova_senha" required minlength="8" style="width: 350px" />
+                    <small class="text-muted">Mínimo de 8 caracteres, com maiúscula, minúscula, número e caractere especial</small>
+                    <button type="button" id="btn-senha-nova" onclick="mostrarNovaSenha()">
+                        <i class="bi bi-eye-fill"></i>
+                    </button>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="confirmar_senha" class="form-label">Confirmar Nova Senha:</label>
-                <input type="password" class="form-control" id="confirmar_senha" name="confirmar_senha" required minlength="8" />
+                <div class="input-container">
+                    <input type="password" class="form-control" id="confirmar_senha" name="confirmar_senha" required minlength="8" />
+                    <button type="button" id="btn-senha-confirmar" onclick="mostrarConfirmarSenha()">
+                        <i class="bi bi-eye-fill"></i>
+                    </button>
+                </div>
             </div>
             <div class="mt-4">
                 <a href="conta.php" class="btn btn-primary me-2" style="margin-right:10px">Voltar</a>
