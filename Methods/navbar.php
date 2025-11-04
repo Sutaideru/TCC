@@ -19,23 +19,24 @@
     </style>
 </head>
 <body>
-<ul class="nav" style = "background-color: #005caa;">
+<ul class="nav" style="background-color: #005caa;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="home.php" style="color:white;"><i class="bi bi-house-door-fill"></i>   Home</a>
+    <a class="nav-link active" aria-current="page" href="home.php" style="color:white;"><i class="bi bi-house-door-fill"></i> Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="prof_add.php" style="color:white;"><i class="bi bi-people-fill"></i>   Professores</a>
+    <a class="nav-link" href="prof_add.php" style="color:white;"><i class="bi bi-people-fill"></i> Professores</a>
   </li>
-  <li>
-    <a class="nav-link active" aria-current="page" href="uc_add.php" style="color:white;"><i class="bi bi-book-half"></i>   Unidades Curriculares</a>
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="uc_add.php" style="color:white;"><i class="bi bi-book-half"></i> Unidades Curriculares</a>
   </li>
-    <li>
-    <a class="nav-link active" aria-current="page" href="conta.php" style="color:white;"><i class="bi bi-person-circle"></i>   Conta</a>
-  </li>
-  <li>
-    <a class="nav-link active" aria-current="page" href="logout.php" style="color:white;"><i class="bi bi-door-open-fill"></i>   Logout</a>
-  </li>
+  <div class="ms-auto d-flex">
+    <li class="nav-item">
+      <a class="nav-link active" href="conta.php" style="color:white;"><i class="bi bi-person-circle"></i> Conta</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="logout.php" style="color:white;"><i class="bi bi-door-open-fill"></i> Logout</a>
+    </li>
+  </div>
 </ul>
 </body>
 </html>
-
