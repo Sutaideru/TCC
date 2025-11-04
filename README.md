@@ -6,10 +6,7 @@ Vinicius Staidel <br>
 
 Estrutura de banco de dados (a incorporar) <br>
 Professor - matricula, cpf <br>
-Materia - id, sigla, carga-horária, ... <br>
-Curso - id, sigla, ... <br>
 ...
-
 
 list-sticky-header.html <br>
 multiweek-view.html
