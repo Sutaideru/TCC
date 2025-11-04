@@ -10,7 +10,7 @@
 <link href="Bootstrap/bootstrap.css" rel="stylesheet">
 <script src="Bootstrap/bootstrap.js"></script> 
 <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
-<title>Cadastro de UC</title>
+<title>Unidades Curriculares</title>
 <style>
   body {
     margin: 0;
