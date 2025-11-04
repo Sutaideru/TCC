@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         editable: true,
         dayMaxEvents: true,
-        events: 'listar_evento.php'
-
+        events: [{
+            title: 'TCC',
+            start: '2025-11-12T07:15:00'
+        }
+        ]
     });
 
     calendar.render();
