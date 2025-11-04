@@ -116,7 +116,11 @@
             <th>ID</th>
             <th>UC</th>
             <th>Turnos</th>
-            <th>Ações</th>
+            <th>Carga Horária Total</th>
+            <th>Carga Horária Diária</th>
+            <th>Sigla</th>
+            <th>Curso/Módulo</th>
+            <th>Local</th>
           </tr>
         </thead>
         <tbody>
@@ -130,6 +134,11 @@
             <td><?= $uc['IDuc'] ?></td>
             <td><?= $uc['nome_uc'] ?></td>
             <td><?= $uc['turnos_uc'] ?></td>
+            <td><?= $uc['carga_horaria_total_uc'] ?></td>
+            <td><?= $uc['carga_horaria_dia_uc'] ?></td>
+            <td><?= $uc['sigla_uc'] ?></td>
+            <td><?= $uc['curso_modulo_uc'] ?></td>
+            <td><?= $uc['local'] ?></td>
             <td>
               <a href="uc-view.php?IDuc=<?= $uc['IDuc'] ?>" class="btn btn-secondary btn-sm">Visualizar</a>
               <a href="uc-edit.php?IDuc=<?= $uc['IDuc'] ?>" class="btn btn-success btn-sm">Editar</a>
@@ -141,7 +150,7 @@
           <?php
               }
             } else {
-              echo "<tr><td colspan='4'><h5>Nenhuma UC encontrada</h5></td></tr>";
+              echo "<tr><td colspan='8'><h5>Nenhuma UC encontrada</h5></td></tr>";
             }
           ?>
         </tbody>
