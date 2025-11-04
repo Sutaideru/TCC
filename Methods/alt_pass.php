@@ -127,7 +127,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="nova_senha" class="form-label">Nova Senha:</label>
                 <div class="input-container">
                     <input type="password" class="form-control" id="nova_senha" name="nova_senha" required minlength="8" style="width: 350px" />
-                    <small class="text-muted">Mínimo de 8 caracteres, com maiúscula, minúscula, número e caractere especial</small>
                     <button type="button" id="btn-senha-nova" onclick="mostrarNovaSenha()">
                         <i class="bi bi-eye-fill"></i>
                     </button>
@@ -142,6 +141,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </button>
                 </div>
             </div>
+            <div><small class="text-muted">Mínimo de 8 caracteres, com maiúscula, minúscula, número e caractere especial</small></div>
             <div class="mt-4">
                 <a href="conta.php" class="btn btn-primary me-2" style="margin-right:10px">Voltar</a>
                 <button type="submit" class="btn btn-warning" style="margin-right: 10px">Alterar Senha</button>
