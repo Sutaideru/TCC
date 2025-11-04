@@ -6,6 +6,16 @@
     <link href="Bootstrap/bootstrap.css" rel="stylesheet">
     <script src="Bootstrap/bootstrap.js"></script> 
     <script src="scripts.js"></script>
+    <style>
+      .nav-item:hover{
+        background-color: #0070d1ff;
+        color: white !important;
+      }
+      .nav-link:hover{
+        background-color: #0070d1ff;
+        color: white !important;
+      }
+    </style>
 </head>
 <body>
 <ul class="nav" style = "background-color: #005caa;">
@@ -13,10 +23,10 @@
     <a class="nav-link active" aria-current="page" href="home.php" style="color:white;">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="prof_add.php" style="color:white;">Adicionar Professor</a>
+    <a class="nav-link" href="prof_add.php" style="color:white;">Professores</a>
   </li>
   <li>
-    <a class="nav-link active" aria-current="page" href="uc_add.php" style="color:white;">Adicionar UC</a>
+    <a class="nav-link active" aria-current="page" href="uc_add.php" style="color:white;">Unidades Curriculares</a>
   </li>
     <li>
     <a class="nav-link active" aria-current="page" href="conta.php" style="color:white;">Conta</a>
