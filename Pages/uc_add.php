@@ -121,6 +121,7 @@
             <th>Sigla</th>
             <th>Curso/Módulo</th>
             <th>Local</th>
+            <th>Ações</th>
           </tr>
         </thead>
         <tbody>
