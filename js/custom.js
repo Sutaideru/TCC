@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
+        
+        themeSystem: 'bootstrap5',
+
         headerToolbar: {
             left: 'prev,next today',
             center: 'title',
@@ -31,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 arg.event.remove()
             }
         },
-        editable: true,
+        editable: false,
         dayMaxEvents: true,
         events: 'listar_evento.php'
 
