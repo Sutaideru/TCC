@@ -101,7 +101,7 @@
         <input type="text" name="curso_modulo_uc" class="form-control" required>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-5">
         <label class="form-label">Local</label>
         <input type="text" name="local" class="form-control" required>
       </div>
