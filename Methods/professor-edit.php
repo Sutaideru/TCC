@@ -24,6 +24,7 @@
                             <a href="prof_add.php" class="btn btn-danger float-end">Voltar</a>
                         </h4>
                     </div>
+                    <form action="acoes.php" method="POST">
                     <div class="card-body">
                         <?php 
                         if (isset($_GET['matricula'])) {
@@ -34,7 +35,7 @@
                             if (mysqli_num_rows($query) > 0) {
                                 $usuario = mysqli_fetch_array($query);
                         ?>
-                        <form action="acoes.php" method="POST">
+
                             <input type="hidden" name="usuario_id" value="<?= $usuario['matricula'] ?>">
                             <div class="mb-3">
                                 <label>Matricula</label>

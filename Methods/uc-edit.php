@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Editar UC</title>
+    <title>Editar Unidade Curricular</title>
     <style>
         body {
             background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
