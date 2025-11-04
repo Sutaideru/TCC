@@ -108,9 +108,9 @@
 
       <button type="submit" class="btn btn-light">Cadastrar UC</button>
     </form>
-
-    <div class="table-container">
-      <table class="table table-bordered table-striped mb-0">
+  </div>
+    <div class="table-container mb-0">
+      <table class="table table-bordered table-striped">
         <thead>
           <tr>
             <th>ID</th>
