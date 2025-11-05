@@ -42,7 +42,7 @@
 
 
     .card-form {
-      background-color: #0d6efd;
+      background-color: #005caa;
       border-radius: 20px;
       box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
       padding: 40px 50px;

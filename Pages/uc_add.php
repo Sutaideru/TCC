@@ -36,7 +36,7 @@
     padding-top: 120px;
   }
   .retangulo-azul {
-    background-color: #0d6efd;
+    background-color: #005caa;
     color: white;
     width: 80%;
     max-width: 900px;
