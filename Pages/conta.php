@@ -130,12 +130,11 @@ if ($result && $result->num_rows > 0) {
     </div>
 
     <div class="button-group">
-        <a href="home.php" class="btn btn-primary me-2" style="align-self: left">Voltar para Home</a>
+        <a href="home.php" class="btn btn-primary me-2" style="align-self: left; background-color: #005caa;">Voltar para Home</a>
         <a href="alt_pass.php" class="btn btn-warning" style="align-self: right">Alterar Senha</a>
         <a href="logout.php" class="btn btn-danger" style="align-self: center">Sair</a>
     </div>
 </div>
-
     </main>
 </body>
 
