@@ -143,7 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div><small class="text-muted">Mínimo de 8 caracteres, com maiúscula, minúscula, número e caractere especial</small></div>
             <div class="mt-4">
-                <a href="conta.php" class="btn btn-primary me-2" style="margin-right:10px">Voltar</a>
+                <a href="conta.php" class="btn btn-primary me-2" style="margin-right:10px; background-color: #005caa;">Voltar</a>
                 <button type="submit" class="btn btn-warning" style="margin-right: 10px">Alterar Senha</button>
                 <a href="logout.php" class="btn btn-danger" style="margin-right:10px">Sair</a>
             </div>
