@@ -118,43 +118,38 @@
 <body>
     <div class="card-body">
         <?php
-            if (isset($_GET['id'])) {
-                $matricula = real_escape_string($connection, $_GET['id']);
-                $sql = "SELECT * FROM professores WHERE id = 'matricula'";
+            if (isset($_GET['matricula'])) {
+                $matricula = mysqli_real_escape_string($connection, $_GET['matricula']);
+                $sql = "SELECT * FROM professores WHERE matricula = '$matricula'";
                 $query = mysqli_query($connection, $sql);
 
                 if (mysqli_num_rows($query) > 0){
-                    $professor = mysqli_fetch_array($query);
+                    $usuario = mysqli_fetch_array($query);
                 }
             
         ?>
         <div class="mb-3">
-            <label></label>
+            <label>Matricula</label>
             <p class="form-control">
                 <?= $usuario['matricula']; ?>
             </p>
         </div>
         <div class="mb-3">
-            <label></label>
+            <label>Nome</label>
             <p class="form-control">
-                <?= $usuario['nome']; ?>
+                <?= $usuario['nome_professor']; ?>
             </p>
         </div>
         <div class="mb-3">
-            <label></label>
+            <label>Turnos</label>
             <p class="form-control">
-                <?= $usuario['turnos']; ?>
-            </p>
-        </div>
-        <div class="mb-3">
-            <label></label>
-            <p class="form-control">
-                <?= $usuario['']; ?>
+                <?= $usuario['turnos_professor']; ?>
             </p>
         </div>
         <?php
             } else {
                 echo "<h5>Professor não encontrado</h5>";
+                echo "<a href='prof_add.php' class='btn btn-primary me-2' style='align-self: center'>Voltar</a>";;
             };
         ?>
     </div>
