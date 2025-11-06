@@ -47,7 +47,16 @@
                             </div>
                             <div class="mb-3">
                                 <label>Turnos</label>
-                                <input type="text" name="turnos_professor" value="<?= $usuario['turnos_professor'] ?>" class="form-control" />
+                                <select name="turnos_professor" class="form-select" required>
+                                    <option value="">Selecione o turno</option>
+                                    <option value="M">Manhã</option>
+                                    <option value="T">Tarde</option>
+                                    <option value="N">Noite</option>
+                                    <option value="MT">Manhã e Tarde</option>
+                                    <option value="MN">Manhã e Noite</option>
+                                    <option value="TN">Tarde e Noite</option>
+                                    <option value="MTN">Manhã, Tarde e Noite</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <button type="submit" name="update_usuario" class="btn btn-primary">Salvar</button>
