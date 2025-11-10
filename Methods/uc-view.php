@@ -10,7 +10,7 @@
   <link href="Bootstrap/bootstrap.css" rel="stylesheet">
   <script src="Bootstrap/bootstrap.js"></script> 
   <link rel="icon" type="image/x-icon" href="./images/calendario.ico">
-  <title>Visualição de Unidade Curricular</title>
+  <title>Visualisação de Unidade Curricular</title>
 
   <style>
     body {
@@ -118,43 +118,63 @@
 <body>
     <div class="card-body">
         <?php
-            if (isset($_GET['id'])) {
-                $matricula = real_escape_string($connection, $_GET['id']);
-                $sql = "SELECT * FROM professores WHERE id = 'matricula'";
+            if (isset($_GET['IDuc'])) {
+                $IDuc = mysqli_real_escape_string($connection, $_GET['IDuc']);
+                $sql = "SELECT * FROM unidadescurriculares WHERE IDuc = '$IDuc'";
                 $query = mysqli_query($connection, $sql);
 
                 if (mysqli_num_rows($query) > 0){
-                    $professor = mysqli_fetch_array($query);
+                    $uc = mysqli_fetch_array($query);
                 }
             
         ?>
         <div class="mb-3">
-            <label></label>
+            <label>Matricula</label>
             <p class="form-control">
-                <?= $usuario['matricula']; ?>
+                <?= $uc['IDuc']; ?>
             </p>
         </div>
         <div class="mb-3">
-            <label></label>
+            <label>Nome</label>
             <p class="form-control">
-                <?= $usuario['nome']; ?>
+                <?= $uc['nome_uc']; ?>
             </p>
         </div>
         <div class="mb-3">
-            <label></label>
+            <label>Turnos</label>
             <p class="form-control">
-                <?= $usuario['turnos']; ?>
+                <?= $uc['turnos_uc']; ?>
             </p>
         </div>
         <div class="mb-3">
-            <label></label>
+            <label>Turnos</label>
             <p class="form-control">
-                <?= $usuario['']; ?>
+                <?= $uc['carga_horaria_total_uc']; ?>
             </p>
+        </div>
+        <div class="mb-3">
+            <label>Turnos</label>
+            <p class="form-control">
+                <?= $uc['carga_horaria_dia_uc']; ?>
+            </p>
+        </div>
+        <div class="mb-3">
+            <label>Turnos</label>
+            <p class="form-control">
+                <?= $uc['curso_modulo_uc']; ?>
+            </p>
+            <div class="mb-3">
+            <label>Turnos</label>
+            <p class="form-control">
+                <?= $uc['local']; ?>
+            </p>
+        </div>
+        <a href="uc_add.php" class="btn btn-primary">Voltar</a>
         </div>
         <?php
             } else {
-                echo "<h5>Unidade Curricular não encontrada</h5>";
+                echo "<h5>Unidade não encontrado</h5>";
+                echo "<a href='prof_add.php' class='btn btn-primary me-2' style='align-self: center'>Voltar</a>";;
             };
         ?>
     </div>

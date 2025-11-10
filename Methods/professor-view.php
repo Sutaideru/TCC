@@ -152,6 +152,7 @@
                 echo "<a href='prof_add.php' class='btn btn-primary me-2' style='align-self: center'>Voltar</a>";;
             };
         ?>
+        <a href="prof_add.php" class="btn btn-primary">Voltar</a>
     </div>
 </body>
 </html>
