@@ -42,7 +42,7 @@
 
 
     .card-form {
-      background-color: #0d6efd;
+      background-color: #005caa;
       border-radius: 20px;
       box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
       padding: 40px 50px;
@@ -116,7 +116,7 @@
   </style>
 </head>
 <body>
-    <div class="card-body">
+    <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
         <?php
             if (isset($_GET['matricula'])) {
                 $matricula = mysqli_real_escape_string($connection, $_GET['matricula']);
@@ -130,17 +130,17 @@
         ?>
         <div class="mb-3">
             <label>Matricula</label>
-            <p class="form-control">
+            <p class="form-control" style="width: 250 vw">
                 <?= $usuario['matricula']; ?>
             </p>
         </div>
-        <div class="mb-3">
+        <div class="mb-3" style="">
             <label>Nome</label>
             <p class="form-control">
                 <?= $usuario['nome_professor']; ?>
             </p>
         </div>
-        <div class="mb-3">
+        <div class="mb-3" style="">
             <label>Turnos</label>
             <p class="form-control">
                 <?= $usuario['turnos_professor']; ?>

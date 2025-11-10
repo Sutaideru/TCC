@@ -116,7 +116,7 @@
   </style>
 </head>
 <body>
-    <div class="card-body">
+    <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
         <?php
             if (isset($_GET['IDuc'])) {
                 $IDuc = mysqli_real_escape_string($connection, $_GET['IDuc']);
